@@ -1,0 +1,25 @@
+ion-content{
+  --ion-background-color:#cdddfc;
+
+}
+
+ion-tab-button{
+  --color-selected: #d3985e;
+  background-color: transparent;
+}
+ion-tab-bar{
+  background-color: #31364b;
+}
+
+.wrapContent{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: block;
+  justify-content: center;
+}
+
+ion-header{
+  text-align: center;
+}

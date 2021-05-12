@@ -1,0 +1,37 @@
+<ion-header>
+  <div class="center">
+    <ion-toolbar color='secondary'>
+      <ion-icon name="arrow-back" (click)="goBack()"></ion-icon>
+      <ion-title>Login</ion-title>
+    </ion-toolbar>
+  </div>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="validationFormUser" (ngSubmit)="LoginUser(validationFormUser.value)">
+    <div class="wrapform">
+
+      <ion-item>
+        <ion-input type="text" name="email" formControlName="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="Password" name="password" formControlName="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <div>
+        <p>Don't have an account?<a routerLink='/signup'> Sign Up</a></p>
+      </div>
+
+      <div>
+        <ion-button expand="full" shape='round' type="submit" color="danger" class="sign-btn" [disabled]="!validationFormUser.valid">LogIn</ion-button>
+        <ion-item lines='none'></ion-item>
+      </div>
+
+
+   </div>
+  </form>
+</ion-content>
+
+
+

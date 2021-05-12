@@ -1,0 +1,29 @@
+
+.error-message{
+  font-size: 10px;
+  font-weight: 200px;
+  color: rgb(228, 2, 2);
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 5px solid #118cdd;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1.3s linear infinite;
+}
+
+.social-btns  {
+  text-align: center;
+  ion-button{
+    border-radius: 100px;
+    padding-left: 5px;
+    width: 40px;
+  }
+}
+
+
+
+
